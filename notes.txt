@@ -1,0 +1,37 @@
+// // 1. Budget Controller
+// var budgetController = (function() // this is immediately invoked function which returns a object with a single method named testFunction
+//         {
+//             var x = 34;
+//             var add = function(a)
+//             {
+//                 return a+x;
+//             }
+//             return {
+//                 testFunction : function(b){ // this will be a public function as it is returned
+//                     //console.log(add(b));
+//                     return add(b);
+//                 }
+//             }
+//         }
+// )();
+// // by doing this we are keeping our var 'x' and fucntion 'add' private, thus it will not be used by an outside scope
+
+// // 2. UI Controller
+// var UIController = (function(){
+
+//     //some code
+
+// })();
+
+
+// // 3. Controller
+// var controller = (function(bdgtctrl, uictrl){
+//     var x = bdgtctrl.testFunction(8);
+//     return {
+//         ctrlFunction : function(){
+//             console.log(x);
+//         }
+//     }
+// })(budgetController, UIController);
+
+//--------------------------------------------------------
